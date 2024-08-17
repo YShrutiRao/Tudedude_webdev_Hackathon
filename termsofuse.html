@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="x-icon" href="/images/logo.jpeg">
+    <title>RideEase - Terms of Use</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            padding: 10px 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 120px;
+            height: auto;
+            font-weight: 600;
+            filter: brightness(1.5);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-top: -10px;
+        }
+
+        .nav-links {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-links li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-links li a:hover,
+        .nav-links li a.active {
+            background-color: #1f1f1f;
+            border-radius: 5px;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .terms-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .terms-section h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .terms-section h2 {
+            margin-top: 0;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-to-top:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="/images/logo_transparent.png" alt="logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="terms-section">
+            <h1>Terms of Use</h1>
+            <p>Welcome to RideEase! By using our website and services, you agree to the following terms and conditions:</p>
+            <h2>1. Acceptance of Terms</h2>
+            <p>By accessing or using our website, you agree to comply with and be bound by these terms of use. If you do not agree with any part of these terms, you should not use our services.</p>
+            <h2>2. Use of Services</h2>
+            <p>You agree to use our services only for lawful purposes and in accordance with our policies. You must not use our services for any illegal or unauthorized activities.</p>
+            <h2>3. User Responsibilities</h2>
+            <p>As a user, you are responsible for maintaining the confidentiality of your account and for all activities that occur under your account. You agree to notify us immediately of any unauthorized use of your account.</p>
+            <h2>4. Limitation of Liability</h2>
+            <p>RideEase shall not be liable for any direct, indirect, incidental, or consequential damages arising from your use of our website or services. We make no guarantees regarding the availability or accuracy of our services.</p>
+            <h2>5. Changes to Terms</h2>
+            <p>We reserve the right to update or modify these terms of use at any time. Changes will be effective when posted on our website. Your continued use of our services constitutes acceptance of the modified terms.</p>
+            <h2>6. Governing Law</h2>
+            <p>These terms of use are governed by and construed in accordance with the laws of the jurisdiction in which RideEase operates.</p>
+            <h2>7. Contact Us</h2>
+            <p>If you have any questions regarding our terms of use, please contact us at <a href="https://wa.me/+918750950248">8750950248</a></p>
+        </section>
+    </main>
+
+    
+    <div class="back-to-top" id="backToTop">Back to Top</div>
+
+    <script>
+        const backToTopButton = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
